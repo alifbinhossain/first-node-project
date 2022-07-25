@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .sb {
+        border: 1px solid red;
+      }
+    </style>
+    <title>Product Details</title>
+  </head>
+  <body class="min-h-screen pt-12 pb-24 bg-green-400">
+    <div class="w-[80%] mx-auto">
+      <div class="relative">
+        <a class="absolute top-1/2 left-0 -translate-y-1/2 ml-2" href="/">
+          < Back
+        </a>
+        <h1 class="text-3xl text-center text-green-700">Card Details</h1>
+      </div>
+
+      <div class="mt-8">
+        <img
+          class="h-96 w-full object-cover object-center"
+          src="{%IMAGE%}"
+          alt=""
+        />
+
+        <p class="mt-4 leading-7">{%DESCRIPTION%}</p>
+      </div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
